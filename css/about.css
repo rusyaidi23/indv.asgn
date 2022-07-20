@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+	padding: 0;
+	marigin: 0;
+	font-family: 'Poppins':sans-serif;
+  box-sizing: border-box;
+}
+body{
+
+		padding:0;
+		margin:0;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #301934;
+
+}
+.circle{
+  position: relative;
+  width: 35vh;
+  height: 35vh;
+  background: linear-gradient(#FFFFFF,#FBFF00);
+  border-radius:50%;
+  animation: animate1 0.5s linear infinite;
+  right:85%;
+	top :50%;
+}
+@keyframes animate1 {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.circle:after{
+  content: '';
+  position: absolute;
+  top:-5px;
+  right:-5px;
+  bottom:-5px;
+  left:-5px;
+  border-radius: 50%;
+  background-color: 0DD7DD;
+
+}
+.circle span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#FFFFFF,#ADD8E6);
+  border-radius:50%;
+
+}
+.circle span:nth-child(1){
+  filter: blur(5px);
+}
+
+.circle span:nth-child(2){
+  filter: blur(5px);
+}
+.circle span:nth-child(3){
+  filter: blur(5px);
+}
+.circle span:nth-child(4){
+  filter: blur(5px);
+}
+.wrap{
+	font-family: Poppins;
+	color: white;
+	font-size: 60px;
+	overflow: hidden;
+	border-right: :.15em solid white;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	animation:typing 2s steps(14,end),blink .1s step-end infinite;
+}
+@keyframes typing {
+	from{width: 0}
+	to{width: 80%}
+}
+@keyframes blink {
+	from, to{border-color: transparent }
+	50%{border-color: white}
+}
+.me fieldset{
+	background-color: #301934;
+	font-family: Poppins;
+	color: white;
+	border-radius: 15px;
+	border-color: #ADD8E6;
+	box-shadow: 10px 10px 10px #1B7277 ;
+	font-size: 20px;
+}
+.me legend{
+	color:;	font-size: 30px;
+	background-color:#301934;
+	border-radius: 15px;
+
+}
+.wrapper{
+	position: absolute;
+	display: grid;
+	height: 35%;
+	width: 25%;
+	top:60%;
+	left:5%;
+}
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(2) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #ff0000;
+}
+.wrapper h1{
+	position: absolute;
+	left:8%;
+	top:-30%;
+	color: white;
+	font-family: monospace;
+}
+.education fieldset{
+	background-color: #301934;
+	font-family: Poppins;
+	color: white;
+	border-radius: 15px;
+	border-color: transparent;
+	box-shadow: 10px 10px 10px #1B7277 ;
+	font-size: 20px;
+}
+.education legend{
+	color:;	font-size: 30px;
+	background-color:#301934;
+	border-radius: 15px;
+
+}
+.education table{
+
+	border-collapse: collapse;
+	width:872px;
+	height: 215px;
+	border:1px solid white;
+	box-shadow: 2px 2px 12px ;
+}
+.education table tr{
+	transition: all .2s ease-in;
+	cursor:pointer;
+}
+.education table tr{
+	transition: all .2s ease-in;
+	cursor:pointer;
+}
+.education table th{
+	padding: 12px;
+	text-align: center;
+	border-bottom: 1px black;
+	background-color: white;
+	color: #301934;
+
+}
+.education table td{
+	padding: 12px;
+	text-align: center;
+	border-bottom: 1px solid white;
+
+}
+.education table tr:hover{
+	background-color: #301934;
+	color: white;
+	transform: scale(1.02);
+	box-shadow: 2px 2px 12px ;
+}
+.nav{
+	position:absolute;
+	left: 60%;
+	width: 100%;
+	padding: 10px 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
+	top:1%;
+}
+
+
+.nav ul{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+
+}
+.nav ul li{
+	margin-left:20px;
+	list-style: none;
+}
+.nav ul li a{
+	text-decoration: none;
+	color: white;
+	border-radius: 20px;
+	padding: 6px 15px;
+
+}
+.nav ul li a:hover{
+	background: white;
+	color: #8A87F4;
+}
+.nav ul li a.active{
+	background: white;
+	color: #8A87F4;
+}
